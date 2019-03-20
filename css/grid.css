@@ -30,3 +30,32 @@ aside {
   display: grid;
   grid-template-columns: auto 80%;
 }
+
+
+.chart-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+}
+
+.new-members-recent-activity{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+}
+
+.social-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.outer-circle {
+  width: 80px;
+  height: 80px;
+  margin: 15px;
+  background-color: #7B72D8;
+  border-radius: 50%;
+  display: inline-block;
+}

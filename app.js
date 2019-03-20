@@ -59,9 +59,8 @@ var myBarchart = new Chart(ctx2, {
     data: {
         labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
         datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
+            label: '',
+            backgroundColor: 'rgba(99, 0, 176, 0.44)',
             data: [75, 100, 175, 150, 225, 200, 100]
         }]
     },
@@ -73,17 +72,17 @@ var myBarchart = new Chart(ctx2, {
 var ctx3 = document.getElementById('myPieChart').getContext('2d');
 var myPieChart = new Chart(ctx3, {
     // The type of chart we want to create
-    type: 'pie',
+    type: 'doughnut',
 
     // The data for our dataset
     data: {
         labels: ['Phones', 'Tablets', 'Desktop'],
         datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+            label: 'How Many Users',
+            backgroundColor: ['rgb(109, 161, 124)', 'rgb(80, 145, 152)', 'rgba(99, 0, 176, 0.44)'],
+            data: [20, 25, 70],
         }]
+
     },
 
     // Configuration options go here
